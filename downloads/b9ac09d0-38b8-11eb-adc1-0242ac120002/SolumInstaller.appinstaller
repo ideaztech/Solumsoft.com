@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="https://solumsoft.com/downloads/b9ac09d0-38b8-11eb-adc1-0242ac120002/SolumInstaller.appinstaller"
+	Version="2.4.2.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="56c81633-9c28-40aa-a47e-d12d87283177"
+		Version="2.4.2.0"
+		Publisher="CN=Ideaz"
+		Uri="https://solumsoft.com/downloads/b9ac09d0-38b8-11eb-adc1-0242ac120002/SolumInstaller_2.4.2.0_Test/SolumInstaller_2.4.2.0_x86.appxbundle" />
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>
