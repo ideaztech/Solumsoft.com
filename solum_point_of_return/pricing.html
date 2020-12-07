@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="utf-8">
+  <title>Solum Software Basic Hardware Package</title>
+  <meta name="description" content="Hardware and Software Solutions for Canadian Recycling Depot Management">
+  <meta name="author" content="Ben Moodie">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/skeleton.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/responsive-nav.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+
+
+</head>
+<body>
+ <header> 
+  <div class="sub-navigation">
+    <!-- SUB NAVIGATION BAR -->
+    <div class="container">  
+      <div class="row navigation wow fadeInDown">
+        <div class="three columns">
+          <a href="../index.html" class="home-link"><img src="assets/images/logo_on_white.png" class="navbar-logo" alt="Solum logo"></a>
+          <button type="button" id="tcon" class="tcon tcon-menu--xbutterfly" aria-label="toggle menu">
+            <span class="tcon-menu__lines" aria-hidden="true"></span>
+            <span class="tcon-visuallyhidden">toggle menu</span>
+          </button>
+        </div>
+        <div class="nine columns">
+          <nav class="nav-collapse">
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tour.html">Tour</a></li>
+              <li><a href="download.html">Download</a></li>
+              <li><a href="hardware.html">Hardware</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="http://support.solumpor.com/Main/Default.aspx">Support</a></li>
+            </ul>
+          </nav>
+        </div>      
+      </div>
+    </div>
+    <!-- END NAVIGATION BAR --> 
+  </div>
+  
+  <!-- Mini Hero -->
+  <section class="minihero package-one">
+    <div class="container" data-wow-delay="0.25s">
+      <div class="row">
+        <div class="twelve columns">
+          <h2>Solum <strong>POR Pricing</strong></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+</header> 
+
+<style>
+  .pricing-table .row {
+    margin: 5rem auto 0; 
+    text-align: center; } 
+  .pricing-table .columns {
+    padding: 0;
+    margin: 0; }
+  .pricing-header { 
+    padding: 2rem 1rem;
+    text-align: center;
+    letter-spacing: 0.4rem;
+    font-weight: 600; }
+  .tier-cost {
+    padding: 1rem 1rem 3rem;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 10rem; }
+  .tier-cost p {
+    font-size: 1.6rem;
+    margin: -2rem 0 0 0; 
+    line-height: 1.2;
+    color: white !important; }
+  .non-ideaz {
+    padding: 1rem 1rem 3rem;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    font-size: 10rem; }
+  .non-ideaz p {
+    font-size: 1.6rem;
+    margin: -2rem 0 0 0; 
+    line-height: 1.2;
+    color: rgba(57,65,69,1) !important; }
+  .discount-note {
+    font-size: 1.15rem !important;
+    font-style: italic;
+    margin: 0.5rem 1rem !important;  }
+  .number {
+    position: relative; 
+    padding: 0;
+    line-height: 1;
+    margin: 0 ; 
+    display: inline-block; }
+  .dollar-sign {
+    font-size: 4rem;
+    display: block;
+    position: absolute;
+    left: -2rem;
+    top: 0.7rem; }
+  .pricing-details {
+    border: 1px solid rgba(57,65,69,1); 
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    margin: 1rem 0 4rem 0; 
+    }
+
+/* Tier specific styles */
+  .tier1 {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border: 4px solid rgba(57,65,69,1); 
+    border-right: none;}
+  .tier1 .pricing-header {
+    background: rgba(57,65,69,1);
+    color: rgb(255,255,255); } 
+  .tier1 .tier-cost {
+    background: rgba(80,89,93,1);
+    color: rgb(255,255,255); } 
+  .tier1 .pricing-details:hover {
+    background: rgba(57,65,69,1); 
+    border: 1px solid white; 
+    color: white; }
+  #tier1-popup h4 { 
+    color: rgba(57,65,69,1) !important;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    text-align: left;}
+    
+  .tier2 {
+    background: white; 
+    z-index: 9999999;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border: 4px solid rgba(81,165,60,1);
+    margin-top: -2rem !important; 
+    padding-bottom: 2rem !important; }
+  .tier2 .pricing-header {
+    background: rgba(81,165,60,1);
+    color: rgb(255,255,255); } 
+  .tier2 .tier-cost {
+    background: rgba(102,191,79,1);
+    color: rgb(255,255,255); } 
+  .tier2 .pricing-details:hover {
+    background: rgba(81,165,60,1);
+    border: 1px solid white; 
+    color: white; }
+  #tier2-popup h4 { 
+    color: rgba(81,165,60,1) !important;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    text-align: left;}
+    
+  .tier3 {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border: 4px solid rgba(17,96,168,1);
+    border-left: none;  }
+  .tier3 .pricing-header {
+    background: rgba(17,96,168,1);
+    color: rgb(255,255,255); } 
+  .tier3 .tier-cost {
+    background: rgba(34,115,189,1);
+    color: rgb(255,255,255); } 
+  .tier3 .pricing-details:hover {
+    background: rgba(17,96,168,1);
+    border: 1px solid white; 
+    color: white; } 
+  #tier3-popup h4 { 
+    color: rgba(17,96,168,1) !important;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    text-align: left;}
+
+  .details-popup p, .details-popup ul{ 
+    color: black !important; 
+    text-align: left;}
+    
+  .details-popup h6{ 
+    color: black !important; 
+    text-align: left;
+    text-transform: uppercase;
+    font-weight:bold; }
+  .details-popup h4 { 
+    color: rgba(57, 65, 68,1) !important;
+    font-weight: bold; 
+    text-transform: uppercase; 
+    text-align: center; }
+
+@media (min-width: 950px) { .pricing-row { width: 884px; } }
+@media (max-width: 950px) {  
+  .details-popup { width: 100% !important; border: none !important; left: 0 !important; bottom: 0 !important; }
+  .pricing-table .columns { width: 100% !important; margin-bottom: 4rem;  }
+  .tier1 { border: 4px solid rgba(57,65,69,1); }
+  .tier2 { margin-top: 0 !important; padding-bottom: 3rem !important; }
+  .tier3 { border: 4px solid rgba(17,96,168,1); padding-bottom: 2rem !important; }
+  }
+  
+  .details-popup {
+    display:none;
+    border-top: none !important;
+    left: -4px; 
+    box-sizing: border-box; 
+    bottom: -4px; 
+    width: 813px;
+    padding: 6rem 4rem 4rem 4rem; 
+    color: white !important;
+    font-weight: normal;
+    background: rgba(255,255,255,1); 
+    box-sizing: border-box;  
+    position: relative; 
+    top: 4px; }
+  #tier1-popup { border: 4px solid rgba(57,65,69,1); }
+  #tier2-popup { border: 4px solid rgba(81, 165, 60,1); left: -275px; top: 24px; }
+  #tier3-popup { border: 4px solid rgba(17,96,168,1); left: -542px; top: 4px; }
+  
+</style>
+
+<main class="hardware">
+  <div class="container pricing-table">
+    <div class="row">
+      <div class="twelve columns">
+      <p style="text-align: left;">The following 3 support options are available to help keep your business up and running. We know downtime can cause loss of profits and increased expenses. Therefore, we encourage you to pick from one of the following support options to help prevent and limit downtime.</p>
+      </div>
+    </div>
+    <div class="row pricing-row">
+      
+      <!-- Tier one -->
+      <div class="four columns pricing tier1 wow bounceInLeft" data-wow-duration=".75s" data-wow-delay=".25s">
+        <div class="pricing-header">REMOTE SUPPORT</div>
+          <div class="tier-cost">
+            <div class="number"><div class="dollar-sign">$</div>15</div>
+            <p>per station / per month<br>min $100 - max $200 per month</p>
+            <p class="discount-note">(Discounted price where hardware has been supplied & installed by Ideaz)</p>
+          </div>
+          <div class="non-ideaz">
+            <div class="number"><div class="dollar-sign">$</div>25</div>
+            <p>per station / per month<br>min $100 - max $200 per month</p>
+          </div>
+        <button class="pricing-details" id="tier1-expand">VIEW DETAILS</button>
+        
+        
+      <!-- Tier 1 popup -->
+      <div class="details-popup" id="tier1-popup" >
+          <h4>Remote Service</h4>
+          <p>The Remote Service plan includes prompt remote support when required. It also includes both downtime support and regular preventative maintenance that can be done remotely. In most cases we can fix the problem remotely. Therefore, we recommend this support plan to all our customers since it is most cost effective.</p>
+          <h6>Downtime support</h6>
+          <ul>
+            <li>Response times: Your telephone or email support request will be responded to remotely and every effort will be made to repair the problem remotely.
+              <ul>
+                <li>Remote support response within 3 working hours. (8AM – 6PM Weekdays)</li>
+                <li>Weekend support is also included but the response time may be longer in some cases.</li>
+              </ul>
+            </li>
+            <li>Hardware failures: In cases where there is a hardware failure, we will recommend if the hardware can be repaired promptly or if it will need to be sent for repairs or replaced with new.
+              <ul>
+                <li>If the hardware device needs to be shipped away for repairs, we will handle the warranty paperwork but the depot will be responsible for the shipping and any related charges.</li>
+                <li>If the hardware must be replaced with new, we will provide some purchase options but the final decision of the purchase will be up to the depot owner. This agreement does not cover the replacement costs.</li>
+                <li>If a computer is replaced or repaired, we will setup and configure the Solum software again.</li>
+              </ul>
+            </li>
+          </ul>
+          <h6>Preventative Maintenance</h6>
+          <ul>
+            <li>Every 3 months the following maintenance jobs will be done remotely
+              <ul>
+                <li>Check the database backup. Is the backup being done on a daily schedule? Does the backup copy work? We will take the previous day’s backup and confirm that it can be opened and is complete.</li>
+                <li>Optimize computer stations. We find that some settings get changed so that the customer screen doesn’t work or looks funny, or the computers slow down. We will check that all the settings on each station are optimized for the best performance.</li>
+                <li>Install updates. There may be Solum updates, Windows updates, or Anti-virus updates that need to be installed. These will be completed during our maintenance.</li>
+              </ul>
+            </li>
+          </ul>
+        <h6>Availability</h6>
+        <p>The Remote Service plan is available to all Alberta bottle depots.</p>
+      </div>
+      </div>
+
+      
+      <!-- Tier two -->
+      <div class="four columns pricing tier2 wow bounceInUp" data-wow-duration=".75s" data-wow-delay="0s">
+         
+        <div class="pricing-header">FULL SERVICE</div>
+          <div class="tier-cost">
+            <div class="number"><div class="dollar-sign">$</div>40</div>
+            <p>per station / per month<br>min $100 - max $200 per month</p>
+            <p class="discount-note">(Discounted price where hardware has been supplied & installed by Ideaz)</p>
+          </div>
+          <div class="non-ideaz">
+            <div class="number"><div class="dollar-sign">$</div>80</div>
+            <p>per station / per month<br>min $100 - max $200 per month</p>
+          </div>
+        <button class="pricing-details" id="tier2-expand">VIEW DETAILS</button>
+        
+      
+      <!-- Tier 2 popup -->
+      <div class="details-popup" id="tier2-popup">
+          <h4>Full Service</h4>
+          <p>The Full Service plan includes prompt remote support and onsite support within one business day when required. It also includes both downtime support and regular preventative maintenance that helps to prevent downtime.</p>
+          <h6>Downtime support</h6>
+          <ul>
+            <li>Your telephone or email support request will be responded to remotely if possible. If a site visit is required, we will visit your location to fix the problem on site.
+              <ul>
+                <li>Remote support response within 3 working hours. (8AM – 6PM Weekdays)</li>
+                <li>Onsite support response within one business day.</li>
+              </ul>
+            </li>
+            <li>Hardware failures: In cases where there is a hardware failure, we will recommend if the hardware can be repaired promptly or if it will need to be sent for repairs or replaced with new.
+              <ul>
+                <li>If the hardware device needs to be shipped away for repairs, we will handle the warranty paperwork and shipping charges. Charges for replacement parts that are not covered by warranty are not covered by this agreement.</li>
+                <li>If the hardware must be replaced with new, we will provide some purchase options but the final decision of the purchase will be up to the depot owner. This agreement does not cover the replacement costs.</li>
+                <li>If the hardware device will likely be down for more than one business day, we will provide a replacement for the failed hardware device and do whatever installation is necessary to get the replacement hardware up and working.</li>
+              </ul>
+            </li>
+          </ul>
+          <h6>Preventative Maintenance</h6>
+          <ul>
+            <li>Every 3 months the following maintenance jobs will be done
+              <ul>
+                <li>Check the database backup. Is the backup being done on a daily schedule? Does the backup copy work? We will take the previous day’s backup and confirm that it can be opened and is complete.</li>
+                <li>Optimize computer stations. We find that some settings get changed so that the customer screen doesn’t work or looks funny, or the computers slow down. We will check that all the settings on each station are optimized for the best performance.</li>
+                <li>Install updates. There may be Solum updates, Windows updates, or Anti-virus updates that need to be installed. These will be completed during our maintenance.</li>
+              </ul>
+            </li>
+            <li>Every 3 months the following maintenance jobs will be done
+              <ul>
+                <li>Replace one server hard drive with new. Each of our servers has two hard drives that mirror each other. If one drive crashes the other will keep running. We will replace one of those drives each year, alternating which drive is replaced each year. Thus the server hard drives will never be more than 2 years old.</li>
+                <li>Replace UPS Battery on server. The UPS battery backup is to save the server when there is a power failure. However, we find that sometimes the batteries in the UPS shorts out or fail after a couple years. When this happens, the server shuts down and will not turn on until the UPS is replaced. Therefore we find it is best just to replace the battery or complete UPS before it fails. If the server does not have a UPS battery backup, a new one will be provided after the first year of support.</li>
+              </ul>
+            </li>
+          </ul>
+        <h6>Availability</h6>
+        <p>The Full Service plan is only available to Metro-Edmonton and Metro-Calgary bottle depots. Other locations may be added in the future or by special request.</p>
+      </div>
+      </div>
+      
+      <!-- Tier three -->
+      <div class="four columns pricing tier3 wow bounceInRight" data-wow-duration=".75s" data-wow-delay="0.25s">
+         
+        <div class="pricing-header">PER INCIDENT</div>
+          <div class="tier-cost">
+            <div class="number"><div class="dollar-sign">$</div>150</div>
+            <p>per station / per month<br>min $100 - max $200 per month</p>
+            <p class="discount-note">(Discounted price where hardware has been supplied & installed by Ideaz)</p>
+          </div>
+          <div class="non-ideaz">
+            <div class="number"><div class="dollar-sign">$</div>200</div>
+            <p>per station / per month<br>min $100 - max $200 per month</p>
+          </div>
+        <button class="pricing-details" id="tier3-expand">VIEW DETAILS</button>
+      
+      <!-- Tier 2 popup -->
+      <div class="details-popup" id="tier3-popup">
+        <h4>Per Incident Service</h4>
+          <p>The Per Incident Service includes prompt remote support and onsite support when required. This includes the same downtime support that is included in the Full Service plan but charges are calculated based on time and expenses required to perform the requested service. If a site visit is required, the labour charge will be from when we leave our office until we get back to our office. Every support incident will be documented and charged directly to a credit card provided by the depot. The depot owner will have opportunity to see that all charges are merited.</p>
+          <h6>Downtime support</h6>
+          <ul>
+            <li>Response times: Your telephone or email support request will be responded to remotely or requires a site visit, depending on the problem and what is required.
+              <ul>
+                <li>Remote support response within 3 working hours. (8AM – 6PM Weekdays)</li>
+              </ul>
+            </li>
+            <li>Hardware failures: In cases where there is a hardware failure, we will recommend if the hardware can be repaired promptly or if it will need to be sent for repairs or replaced with new.
+              <ul>
+                <li>If the hardware device needs to be shipped away for repairs, we will handle the warranty paperwork. Charges for replacement parts that are not covered by warranty are not covered by this agreement.</li>
+                <li>If the hardware must be replaced with new, we will provide some purchase options but the final decision of the purchase will be up to the depot owner. This agreement does not cover the replacement costs.</li>
+                <li>If the hardware device will likely be down for more than 24 hours, we can rent a temporary replacement for the failed hardware device. The replacement unit will be similar to what it replaces but may not be the exact same model. We will also do whatever installation is necessary to get the replacement hardware up and working.</li>
+              </ul>
+            </li>
+          </ul>
+          <h6>Preventative Maintenance</h6>
+          <ul>
+            <li>Every 3 months the following maintenance jobs will be done
+              <ul>
+                <li>Check the database backup. Is the backup being done on a daily schedule? Does the backup copy work? We will take the previous day’s backup and confirm that it can be opened and is complete.</li>
+                <li>Optimize computer stations. We find that some settings get changed so that the customer screen doesn’t work or looks funny, or the computers slow down. We will check that all the settings on each station are optimized for the best performance.</li>
+                <li>Install updates. There may be Solum updates, Windows updates, or Anti-virus updates that need to be installed. These will be completed during our maintenance.</li>
+              </ul>
+            </li>
+          </ul>
+        <h6>Availability</h6>
+        <p>The Per Incident Service plan is available to all Alberta bottle depots with agreement in place.</p>
+      </div>
+
+      </div>
+      
+      
+      
+    </div>
+
+  </div>
+  
+  
+  
+  
+  
+  
+  
+
+
+</main>  
+  
+  
+  <footer>
+    <section class="content-banner wow fadeIn">
+      <div class="row container" style="height: 200px; position: relative; ">
+        <div class="twelve columns " style="text-align: center;">
+          <h4 class="center-head">Download a <a href="download.html">FREE DEMO TODAY</a> and see how Solum can make  your depot more profitable</h4>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section class="footer">
+      <div class="row container">
+        <div class="twelve columns">
+          <ul class="footer-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="tour.html"> TOUR</a></li>
+            <li><a href="download.html">DOWNLOAD</a></li>
+            <li><a href="hardware.html">HARDWARE</a></li>
+            <li><a href="pricing.html">PRICING</a></li>
+            <li><a href="http://support.solumpor.com/Main/Default.aspx">SUPPORT</a></li>
+          </ul>
+          
+          <ul class="other-site-nav">
+            <li><a href="../solum_depot_manager">Solum Recycling Depot Manager</a></li>
+            <li><a href="../solum_automated_cashier">Solum Auto Cashier</a></li>
+          </ul>
+  
+        </div>
+      </div>
+    </section>
+    
+
+    
+  </footer>
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="assets/js/wow.min.js"></script>
+  <script> new WOW().init();</script>
+  <script src="assets/js/responsive-nav.js"></script>
+  <script>
+    $( "#tier1-expand" ).click(function() {
+      $( "#tier2-popup" ).slideUp( "slow", function() {});
+      $( "#tier3-popup" ).slideUp( "slow", function() {});
+      $( "#tier1-popup" ).slideToggle( "slow", function() {});
+    });
+    $( "#tier2-expand" ).click(function() {
+      $( "#tier1-popup" ).slideUp( "slow", function() {});
+      $( "#tier3-popup" ).slideUp( "slow", function() {});
+      $( "#tier2-popup" ).slideToggle( "slow", function() {});
+    });
+    $( "#tier3-expand" ).click(function() {
+      $( "#tier1-popup" ).slideUp( "slow", function() {});
+      $( "#tier2-popup" ).slideUp( "slow", function() {});
+      $( "#tier3-popup" ).slideToggle( "slow", function() {});
+    });
+     
+  </script>
+  <script>
+    
+    !function(n,r){"function"==typeof define&&define.amd?define(r):n.transformicons=r()}(this||window,function(){"use strict";var n={},r="tcon-transform",t={transform:["click"],revert:["click"]},e=function(n){return"string"==typeof n?Array.prototype.slice.call(document.querySelectorAll(n)):"undefined"==typeof n||n instanceof Array?n:[n]},o=function(n){return"string"==typeof n?n.toLowerCase().split(" "):n},i=function(n,r,i){var c=(i?"remove":"add")+"EventListener",u=e(n),a=u.length,s={};for(var l in t)s[l]=r&&r[l]?o(r[l]):t[l];for(;a--;)for(var d in s)for(var v=s[d].length;v--;)u[a][c](s[d][v],f)},f=function(r){n.toggle(r.currentTarget)};return n.add=function(r,t){return i(r,t),n},n.remove=function(r,t){return i(r,t,!0),n},n.transform=function(t){return e(t).forEach(function(n){n.classList.add(r)}),n},n.revert=function(t){return e(t).forEach(function(n){n.classList.remove(r)}),n},n.toggle=function(t){return e(t).forEach(function(t){n[t.classList.contains(r)?"revert":"transform"](t)}),n},n});transformicons.add('.tcon');
+    
+    var nav = responsiveNav(".nav-collapse", { // Selector
+      animate: true, // Boolean: Use CSS3 transitions, true or false
+      transition: 284, // Integer: Speed of the transition, in milliseconds
+      insert: "before", // String: Insert the toggle before or after the navigation
+      customToggle: "tcon", // Selector: Specify the ID of a custom toggle
+      closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+      openPos: "relative", // String: Position of the opened nav, relative or static
+      navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+      navActiveClass: "js-nav-active", // String: Class that is added to  element when nav is active
+      jsClass: "js", // String: 'JS enabled' class which is added to  element
+    });
+    
+  </script>  
+</body>
+
+</html>

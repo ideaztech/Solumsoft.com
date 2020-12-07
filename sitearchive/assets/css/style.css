@@ -1,0 +1,98 @@
+/* --------------------
+  Table of Contents
+  1. Globals
+  2. Utilities 
+  3. Miscellaneous Layout
+--------------------------------*/
+
+
+/*--------- 1.Globals ---------*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:600,800,900,400,300, 200, 100);
+html {}
+body {
+  background: url(../images/bottleback2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; 
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;   }
+
+p {
+  color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: white; 
+  font-weight: 100; }
+
+
+/*--------- 2. Utilities ---------*/
+.center {
+  text-align: center; }
+  
+.four.columns.full { 
+  width: 100%; 
+  padding: 4.8rem; }
+  @media (min-width: 768px) {
+    .four.columns.full { width: 33.3333333333333333%; }
+    }
+  
+  
+/*--------- 3. Miscellaneous ---------*/
+.hero { width: 100%; padding-right: 4rem; padding-left: 4rem; }
+  
+.splash-logo {
+  width: 200px; 
+  margin: 12rem auto 12rem; }
+  
+.peeker {
+  bottom: 0; 
+  width: 100%; 
+  margin-top: 200px; } 
+  .peeker.row { bottom: 0; position: absolute;  }
+  .peeker .columns { 
+    min-height: 400px; 
+    margin: 0 !important; 
+    width: 33.3333333333333%; 
+    padding: 5rem !important;
+    cursor: pointer; }
+  .peeker .columns:first-child { background: rgba(57,65,69,1.0); }
+  .peeker .columns:nth-child(2) { background: rgba(18,96,168,1.0); }
+  .peeker .columns:last-child { background: rgba(81,165,60,1.0); }
+  .peeker .full a:link,a:visited { 
+    color: rgba(255,255,255,0.9); 
+    border: 1px solid rgba(255,255,255,0.5); 
+    margin: 2rem auto !important; 
+    line-height: 8rem; 
+    padding: 1rem 3rem; 
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px; 
+    font-size: 1.2rem; 
+    transition: all 0.4s ease 0s;}
+  .peeker .full a:hover { 
+    background: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,1);
+    border: 1px solid rgba(255,255,255,0.65); 
+
+    }
+  
+  .focus-point {
+    font-weight: 900; 
+    text-transform: uppercase; }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .peeker .columns { min-height: 500px; padding: 3rem !important; }
+    }
+  @media (max-width: 768px) {
+    .peeker { margin-top: 100px; }
+      .peeker .container { 
+        padding: 0 !important; 
+        margin: 0 !important;
+        width: 100% !important; }
+      .peeker .columns { 
+        min-height: 1px; 
+        padding: 5rem !important;
+        text-align: center !important; }
+    }
+    
+    
